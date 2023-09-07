@@ -16,7 +16,7 @@ export function Counter() {
   }
 
   return (
-    <>
+    <div className="counter-div">
       <h2>Counter:</h2>
       <h3>{count}</h3>
       <div>
@@ -30,6 +30,6 @@ export function Counter() {
           Reset counter
         </button>
       </div>
-    </>
+    </div>
   );
 }

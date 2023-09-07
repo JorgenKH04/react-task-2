@@ -22,8 +22,7 @@ export function Carousel() {
   }
   return (
     <>
-      <div>
-        <h1>Hello</h1>
+      <div className="carousel-div">
         <img
           src={images[imgIndex].imageURL}
           alt={images[imgIndex].description}
@@ -41,7 +40,7 @@ export function Carousel() {
           alt={images[imgIndex + 3].description}
         />
       </div>
-      <div>
+      <div className="img-buttons-div">
         <button type="button" onClick={previousImage}>
           Previous image
         </button>

@@ -1,14 +1,19 @@
-import "./index.css";
+import "./css/index.css";
 import { Counter } from "./components/counter";
 import { LoginForm } from "./components/login-form";
 import { Carousel } from "./components/carousel";
+import { MainLayout } from "./layout/main-layout";
 
 function App() {
   return (
     <>
-      <Counter />
-      <LoginForm />
-      <Carousel />
+      <MainLayout>
+        <div className="top-div">
+          <Counter />
+          <LoginForm />
+        </div>
+        <Carousel />
+      </MainLayout>
     </>
   );
 }

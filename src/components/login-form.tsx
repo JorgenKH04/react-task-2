@@ -9,16 +9,14 @@ export function LoginForm() {
     if (!username) return;
     if (!password) return;
     setAccount(true);
-
-    // if($("#username").value)
-    // setUsername($("#username"))
   }
 
   return (
-    <>
+    <div className="login-div">
       <form>
         <label htmlFor="username">Username:</label>
         <input
+          type="string"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           name="username"
@@ -26,6 +24,7 @@ export function LoginForm() {
         />
         <label htmlFor="password">Password:</label>
         <input
+          type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           name="password"
@@ -35,14 +34,14 @@ export function LoginForm() {
           Submit
         </button>
       </form>
-      <div>
+      <div className="account-info-div">
         {account ? (
           <>
-            <h4>{username}</h4>
-            <h4>{password}</h4>
+            <h4>username: {username}</h4>
+            <h4>password:{password}</h4>
           </>
         ) : null}
       </div>
-    </>
+    </div>
   );
 }

@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #150523;
+  color: #b375ec;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #330c54;
+}
+
+footer {
+  width: 100%;
+  height: 10em;
+  background-color: #330c54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0 0.5em;
+  color: inherit;
+  font-size: 0.75rem;
+  padding: 1em;
+  border: none;
+  background-color: #330c54;
+}
+
+.top-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 10em;
+}
+
+.counter-div,
+.login-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-div {
+  border-left: 3px solid #b375ec;
+}
+
+.counter-div h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.counter-div h3 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.login-div input {
+  background-color: #330c54;
+  border: none;
+  color: inherit;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+
+.login-div label {
+  font-size: 1.25rem;
+}
+
+.login-div form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.account-info-div {
+  font-size: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  gap: 2em;
+}
+
+.carousel-div {
+  padding: 4em 4em 0 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.carousel-div img {
+  width: 100%;
+}
+
+.img-buttons-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-buttons-div button {
+  margin: 2em 0.5em 4em 0.5em;
+  width: 25%;
+}
