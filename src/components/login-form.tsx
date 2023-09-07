@@ -1,16 +1,20 @@
-import { useState } from "react";
+type functionType = () => void;
 
-export function LoginForm() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [account, setAccount] = useState(false);
-
-  function submitHandler() {
-    if (!username) return;
-    if (!password) return;
-    setAccount(true);
-  }
-
+export function LoginForm({
+  submitHandler,
+  username,
+  setUsername,
+  password,
+  setPassword,
+  account,
+}: {
+  submitHandler: functionType;
+  username: string;
+  password: string;
+  account: boolean;
+  setUsername: React.Dispatch<React.SetStateAction<string>>;
+  setPassword: React.Dispatch<React.SetStateAction<string>>;
+}) {
   return (
     <div className="login-div">
       <form>

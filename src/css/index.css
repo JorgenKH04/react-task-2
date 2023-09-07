@@ -107,7 +107,8 @@ button {
 }
 
 .carousel-div img {
-  width: 100%;
+  width: 450px;
+  height: 450px;
 }
 
 .img-buttons-div {
