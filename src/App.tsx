@@ -12,6 +12,7 @@ function App() {
   const [account, setAccount] = useState(false);
 
   function submitHandler() {
+    setAccount(false);
     if (!username) return;
     if (!password) return;
     setAccount(true);
